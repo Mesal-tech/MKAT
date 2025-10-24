@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Arial Nova";
+  src: url("/src/assets/fonts/ArialNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cubao Free Wide";
+  src: url("/src/assets/fonts/cubao.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 🌗 Global body background */
+@layer base {
+  body {
+    @apply font-body bg-gradient-to-b bg-fixed from-[rgb(33,26,61)20%] to-[rgb(18,18,18)100%] text-white scroll-smooth font-body;
+  }
+
+}
+
+/* Optional: Smooth scroll for the entire site */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar globally */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
