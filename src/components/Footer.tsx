@@ -47,8 +47,9 @@ const Footer = () => {
             </div>
 
             <p className={`${textColor} text-sm leading-relaxed max-w-xs`}>
-              Smart, fast, and unstoppable — <span className="text-purple-400 font-medium font-heading">Meerkat</span> embodies
-              the speed and agility of the Monad ecosystem. Meme-driven. Community-powered.
+              Smart, fast, and unstoppable.{" "}
+              <span className="text-purple-400 font-medium font-heading">Meerkat</span> represents
+              the speed and creativity of the Monad ecosystem. Meme powered. Community driven.
             </p>
           </motion.div>
 
@@ -86,7 +87,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className={`font-semibold text-lg mb-5 ${headingColor}`}>Join the Mob</h3>
+            <h3 className={`font-semibold text-lg mb-5 ${headingColor}`}>Stay Connected</h3>
             <div className="flex items-center space-x-8">
               <motion.a
                 href="https://x.com/meerkatcoin"
@@ -110,7 +111,8 @@ const Footer = () => {
             </div>
 
             <p className={`mt-6 text-xs tracking-wide uppercase ${textColor}`}>
-              Stay connected. Stay curious. Stay <span className="text-purple-400 font-heading">MKAT.</span>
+              Stay curious. Stay creative. Stay{" "}
+              <span className="text-purple-400 font-heading">MKAT.</span>
             </p>
           </motion.div>
         </div>
@@ -132,11 +134,13 @@ const Footer = () => {
           className="flex flex-col md:flex-row justify-between items-center text-center md:text-left"
         >
           <p className={`text-sm ${textColor}`}>
-            © {new Date().getFullYear()} <span className="text-purple-400 font-medium font-heading">$MKAT</span>. All rights
+            © {new Date().getFullYear()}{" "}
+            <span className="text-purple-400 font-medium font-heading">$MKAT</span>. All rights
             reserved.
           </p>
           <p className={`text-sm mt-3 md:mt-0 ${textColor}`}>
-            Built with 🧠 by the <span className="text-purple-400 font-semibold font-heading">Meerkat Mob</span>.
+            Built with 🧠 by{" "}
+            <span className="text-purple-400 font-semibold font-heading">Meerkats on Monad</span>.
           </p>
         </motion.div>
       </div>

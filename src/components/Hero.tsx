@@ -79,15 +79,14 @@ const Hero = () => {
           <h1 className="font-heading text-2xl sm:text-3xl lg:text-5xl font-extrabold leading-tight uppercase">
             <span className="block text-white">The Meerkat Has Landed</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-pink-500 mt-2">
-              Building on Monad
+              Home of Meerkats on Monad
             </span>
           </h1>
 
           <p className="text-base sm:text-lg text-white/70 max-w-xl mx-auto md:mx-0 leading-relaxed">
-            $MKAT is the heart of a community-driven movement on Monad —
-            a memecoin with purpose, powered by creativity and speed.
-            No gimmicks. Just a pack of builders, dreamers, and degens
-            shaping something real.
+            We are the Meerkats of Monad. A bold pack building, trading, and
+            having fun together. Fast, curious, and always alert, we move as one
+            across the chain.
           </p>
 
           {/* CTA Buttons */}

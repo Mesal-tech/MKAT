@@ -11,7 +11,7 @@ const MemeSection: React.FC = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      if (window.innerWidth < 768) return; // ✅ Disable pinning on mobile
+      if (window.innerWidth < 768) return; // Disable pinning on mobile
 
       const section = sectionRef.current;
       const text = textRef.current;
@@ -56,11 +56,12 @@ const MemeSection: React.FC = () => {
         className="md:w-1/2 w-full h-auto md:h-screen flex flex-col justify-center px-6 md:px-16 py-16 md:py-20 text-center md:text-left"
       >
         <h2 className="text-4xl md:text-6xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-pink-500 leading-tight">
-          The Power of <br /> $MKAT Memes
+          The Energy of <br /> $MKAT Memes
         </h2>
         <p className="text-gray-300 text-base md:text-xl mt-5 md:mt-6 leading-relaxed">
-          $MKAT isn’t just a token — it’s a vibe. It’s the fun, fast, and fearless
-          spirit of the Meerkat on-chain. Scroll through the memes and catch the energy.
+          $MKAT captures the fun and fearless side of Meerkats on Monad.  
+          Each meme carries our energy, humor, and drive to push culture forward on-chain.  
+          Scroll through and feel the pulse.
         </p>
       </div>
 

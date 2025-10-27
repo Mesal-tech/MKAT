@@ -11,10 +11,8 @@ const About = () => {
   const q = gsap.utils.selector(sectionRef);
 
   useEffect(() => {
-    // Reveal text blocks
     gsap.utils.toArray(q(".reveal")).forEach((el) => {
-      const element = el as HTMLElement; // 👈 Explicit cast
-
+      const element = el as HTMLElement;
       gsap.fromTo(
         element,
         { opacity: 0, y: 60 },
@@ -32,11 +30,9 @@ const About = () => {
       );
     });
 
-    // Cinematic parallax & scale reveal for images
     gsap.utils.toArray(q(".angled-image")).forEach((el) => {
-      const element = el as HTMLElement; // 👈 Explicit cast
+      const element = el as HTMLElement;
       const rotate = parseFloat(element.dataset.rotate || "0");
-
       gsap.fromTo(
         element,
         { opacity: 0, y: 100, rotate, scale: 0.9 },
@@ -57,7 +53,6 @@ const About = () => {
       );
     });
   }, []);
-
 
   return (
     <section
@@ -82,24 +77,23 @@ const About = () => {
             About <span className="text-[#6B3E96]">$MKAT</span>
           </h2>
           <p className="mt-4 text-xl text-gray-600 italic">
-            “Fast, curious, and always on the lookout — the Meerkat never misses a block.”
+            “Quick paws. Sharp minds. Built for Monad speed.”
           </p>
         </div>
 
         {/* Intro paragraph */}
         <div className="reveal text-gray-800 text-lg leading-relaxed space-y-8">
           <p>
-            <span className="font-semibold text-[#6B3E96]">$MKAT</span> is more than just a meme —
-            it’s a signal of speed, intelligence, and community. Inspired by the Meerkat’s agility
-            and awareness, it reflects the essence of{" "}
-            <span className="font-semibold">Monad</span>: fast, secure, and adaptive.
+            <span className="font-semibold text-[#6B3E96]">$MKAT</span> is the spirit of Meerkats on Monad. 
+            A mix of curiosity, teamwork, and speed. Just like real Meerkats, we move together, stay aware, 
+            and build with intent. Fast chain, fast moves, same energy.
           </p>
         </div>
 
-        {/* New early image (left tilt) */}
+        {/* First image */}
         <div className="my-20 flex justify-start rotate-[-3deg]">
           <div
-            className="angled-imagebw-fit w-[75%] sm:w-[60%] shadow-2xl rounded-3xl overflow-hidden"
+            className="angled-image w-[75%] sm:w-[60%] shadow-2xl rounded-3xl overflow-hidden"
             data-rotate="-3"
           >
             <img
@@ -110,23 +104,22 @@ const About = () => {
           </div>
         </div>
 
-        {/* More text */}
+        {/* Middle text */}
         <div className="reveal text-gray-800 text-lg leading-relaxed space-y-8">
           <p>
-            Every block, every meme, every moment of collaboration pushes $MKAT closer to being the
-            cultural heartbeat of the chain. The Meerkat embodies curiosity, standing tall on its
-            paws, scanning the horizon — alert, united, and ready.
+            Meerkats thrive because they look out for one another. That same idea drives $MKAT on Monad. 
+            Builders, creators, and meme lovers working together to grow something fun and fast.
           </p>
         </div>
 
-        {/* Right-aligned image */}
+        {/* Right image */}
         <div className="my-24 flex justify-end rotate-[3deg]">
           <div
             className="angled-image w-[75%] sm:w-[60%] shadow-2xl rounded-3xl overflow-hidden"
             data-rotate="3"
           >
             <img
-              src="/assets/meerkat1.jpg"
+              src="/assets/meerkat2.jpg"
               alt="Meerkat mascot"
               className="w-full h-full object-cover rounded-3xl"
             />
@@ -136,38 +129,36 @@ const About = () => {
         {/* Second text block */}
         <div className="reveal text-gray-800 text-lg leading-relaxed space-y-8">
           <p>
-            The Meerkat represents{" "}
-            <span className="font-semibold text-[#6B3E96]">decentralized cooperation</span>.
-            No one rules the mob — they move together, guided by instinct and trust. That’s what
-            Monad stands for: a network that scales by collaboration, not control.
+            This is more than a token. It’s a space for people who build, joke, and create with purpose. 
+            No central control, no empty talk. Just real energy and shared progress.
           </p>
           <p>
-            We believe in memes as messages — stories that travel faster than code. $MKAT is our
-            symbol of that cultural fusion, where humor meets high performance and speed meets soul.
+            $MKAT is about community, speed, and good vibes on a chain that matches our pace. 
+            Keep your eyes open and your paws ready.
           </p>
         </div>
 
-        {/* Left-aligned image */}
+        {/* Final image */}
         <div className="my-24 flex rotate-[-3deg] justify-start">
           <div
             className="angled-image w-[75%] sm:w-[60%] shadow-2xl rounded-3xl overflow-hidden"
             data-rotate="-3"
           >
             <img
-              src="/assets/meerkat1.jpg"
+              src="/assets/meerkat3.jpg"
               alt="Meerkat community illustration"
               className="w-full h-full object-cover rounded-3xl"
             />
           </div>
         </div>
 
-        {/* Final text block */}
+        {/* Final text */}
         <div className="reveal text-center space-y-6 mt-16">
           <p className="text-xl text-gray-700 italic max-w-3xl mx-auto">
-            “We see you, Monad builders — fast, fearless, and focused. The Meerkat runs beside you.”
+            “Built by Meerkats, for the Monad ecosystem.”
           </p>
           <h3 className="text-3xl font-bold text-[#111]">
-            The Meerkat runs on Monad energy ⚡
+            Stay fast. Stay curious. Stay $MKAT ⚡
           </h3>
         </div>
       </div>
