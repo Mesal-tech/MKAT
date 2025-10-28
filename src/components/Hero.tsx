@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 // ------------------------------------------------------------------
 // === Replaced react-icons/fa with lucide-react imports ===
-import { Twitter, Send, ArrowDown } from "lucide-react"; 
+import { FaXTwitter, FaTelegram, FaArrowDown } from "react-icons/fa"; 
 // Note: We use 'Twitter' for the X logo and 'Send' for Telegram
 // ------------------------------------------------------------------
 import { gsap } from "gsap";
@@ -122,7 +122,7 @@ const Hero = () => {
               className="text-white/50 hover:text-purple-400 transition-all duration-300 hover:scale-110"
             >
               {/* === LUCIDE TWITTER/X ICON === */}
-              <Twitter size={22} />
+              <FaXTwitter size={22} />
             </a>
             <a
               href="#"
@@ -131,7 +131,7 @@ const Hero = () => {
               className="text-white/50 hover:text-purple-400 transition-all duration-300 hover:scale-110"
             >
               {/* === LUCIDE SEND (TELEGRAM) ICON === */}
-              <Send size={22} />
+              <FaTelegram size={22} />
             </a>
 
             <div className="inline-block border border-white/20 bg-white/5 backdrop-blur-md rounded-full px-5 py-2 text-xs tracking-widest uppercase text-purple-200 font-heading">
@@ -160,7 +160,7 @@ const Hero = () => {
           className="p-3 rounded-full border border-white/30 text-white/70 hover:border-purple-400 hover:text-purple-400 transition-all duration-300 hover:scale-125"
         >
           {/* === LUCIDE ARROW DOWN ICON === */}
-          <ArrowDown size={20} />
+          <FaArrowDown size={20} />
         </button>
       </div>
     </section>
