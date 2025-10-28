@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 // ------------------------------------------------------------------
 // === Replaced react-icons/fa with lucide-react imports ===
-import { FaXTwitter, FaTelegram, FaArrowDown } from "react-icons/fa"; 
+import { FaTelegram, FaArrowDown } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6"
 // Note: We use 'Twitter' for the X logo and 'Send' for Telegram
 // ------------------------------------------------------------------
 import { gsap } from "gsap";
