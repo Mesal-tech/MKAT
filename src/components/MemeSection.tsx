@@ -36,12 +36,12 @@ const MemeSection: React.FC = () => {
   }, []);
 
   const memeImages = [
-    "/assets/meerkat1.jpg",
-    "/assets/meerkat1.jpg",
-    "/assets/meerkat1.jpg",
-    "/assets/meerkat1.jpg",
-    "/assets/meerkat1.jpg",
-    "/assets/meerkat1.jpg",
+    "/assets/meme.png",
+    "/assets/meme.png",
+    "/assets/meme.png",
+    "/assets/meme.png",
+    "/assets/meme.png",
+    "/assets/meme.png",
   ];
 
   return (

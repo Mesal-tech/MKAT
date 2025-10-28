@@ -106,7 +106,7 @@ const Header = () => {
             className="flex items-center cursor-pointer select-none"
           >
             <img
-              src="/assets/meerkat1.jpg"
+              src="/assets/meerkat.png"
               alt="$MKAT Logo"
               className="w-12 h-12 object-cover rounded-full border-2 border-[#6E54FF]/80 shadow-[0_0_20px_rgba(110,84,255,0.3)]"
             />
@@ -129,7 +129,7 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
             <motion.a
-              href="https://pump.fun/coin/AVCYCasX489a4tM7yadKjkoQagoWhUa1MjFEPSKBDwLT"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -171,7 +171,7 @@ const Header = () => {
           }`}
         >
           <img
-            src="/assets/meerkat1.jpg"
+            src="/assets/meerkat.png"
             alt="$MKAT"
             className="w-10 h-10 rounded-full border-2 border-[#6E54FF]/80"
             onClick={() => handleNavClick("hero")}
@@ -233,7 +233,6 @@ const Header = () => {
                 <div className="px-6 pb-10 space-y-4">
                   <motion.a
                     href="#"
-                    target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     className="block w-full text-center bg-gradient-to-r from-[#6E54FF] to-[#B084FF] text-white font-semibold py-2.5 rounded-full"

@@ -97,7 +97,7 @@ const About = () => {
             data-rotate="-3"
           >
             <img
-              src="/assets/meerkat1.jpg"
+              src="/assets/meerkat.png"
               alt="Meerkat Concept"
               className="w-full h-full object-cover rounded-3xl"
             />
@@ -119,7 +119,7 @@ const About = () => {
             data-rotate="3"
           >
             <img
-              src="/assets/meerkat2.jpg"
+              src="/assets/meerkat1.jpg"
               alt="Meerkat mascot"
               className="w-full h-full object-cover rounded-3xl"
             />
@@ -145,7 +145,7 @@ const About = () => {
             data-rotate="-3"
           >
             <img
-              src="/assets/meerkat3.jpg"
+              src="/assets/meerkat2.jpg"
               alt="Meerkat community illustration"
               className="w-full h-full object-cover rounded-3xl"
             />

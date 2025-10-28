@@ -1,9 +1,16 @@
 import React, { useEffect, useRef } from "react";
-import { FaTwitter, FaTelegramPlane, FaArrowDown } from "react-icons/fa";
+// ------------------------------------------------------------------
+// === Replaced react-icons/fa with lucide-react imports ===
+import { Twitter, Send, ArrowDown } from "lucide-react"; 
+// Note: We use 'Twitter' for the X logo and 'Send' for Telegram
+// ------------------------------------------------------------------
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import uploadedMeerkatBackground from "/assets/mascot-character.jpg";
+
+// You will need to install the package if you haven't already:
+// npm install lucide-react
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -93,13 +100,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center md:justify-start">
             <button
               onClick={() => scrollToSection("about")}
-              className="bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 text-white font-heading font-bold py-3 px-8 rounded-full text-base uppercase shadow-lg shadow-fuchsia-500/25 hover:scale-[1.05] hover:shadow-fuchsia-500/40 transition-all duration-300"
+              className="bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 text-black font-bold py-3 px-8 rounded-full text-base uppercase shadow-lg shadow-fuchsia-500/25 hover:scale-[1.05] hover:shadow-fuchsia-500/40 transition-all duration-300"
             >
               Join the Movement
             </button>
 
             <a
-              href="/whitepaper"
+              href="/#"
               className="border-2 border-white/30 text-white/80 font-heading font-medium py-3 px-8 rounded-full text-base uppercase hover:bg-white/10 hover:border-white/60 transition-all duration-300"
             >
               Learn More
@@ -114,7 +121,8 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-white/50 hover:text-purple-400 transition-all duration-300 hover:scale-110"
             >
-              <FaTwitter size={22} />
+              {/* === LUCIDE TWITTER/X ICON === */}
+              <Twitter size={22} />
             </a>
             <a
               href="#"
@@ -122,7 +130,8 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-white/50 hover:text-purple-400 transition-all duration-300 hover:scale-110"
             >
-              <FaTelegramPlane size={22} />
+              {/* === LUCIDE SEND (TELEGRAM) ICON === */}
+              <Send size={22} />
             </a>
 
             <div className="inline-block border border-white/20 bg-white/5 backdrop-blur-md rounded-full px-5 py-2 text-xs tracking-widest uppercase text-purple-200 font-heading">
@@ -150,7 +159,8 @@ const Hero = () => {
           onClick={() => scrollToSection("about")}
           className="p-3 rounded-full border border-white/30 text-white/70 hover:border-purple-400 hover:text-purple-400 transition-all duration-300 hover:scale-125"
         >
-          <FaArrowDown size={20} />
+          {/* === LUCIDE ARROW DOWN ICON === */}
+          <ArrowDown size={20} />
         </button>
       </div>
     </section>
